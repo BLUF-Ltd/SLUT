@@ -132,3 +132,17 @@ This is an example JSON message for a link request, from BLUF to Switched.app
 			"url": "https://bluf.com/profiles/3"
   		}
 	}
+
+## Included files for the BLUF reference implementation
+
+### slut-update.php
+This is the webhook receiving code to which other systems can post requests
+
+### slutlib.php
+Helper functions to general URLs, store links in the database, verify payloads, etc
+
+### slutlink.php
+User facing web page that will ask users if they want to set up a link to the requesting site. Uses a Smarty Template
+
+### slutlink.tpl
+The Smarty template for the link page
