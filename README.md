@@ -14,7 +14,8 @@ to verify account ownership, and then the rest of the work happens in the backgr
 + The app backend generates a link to the BLUF slutlink.php page and opens it in a browser
 + The BLUF site prompts the user to log in
 + The payload is extracted from the URL and verified
-+ If verified, an acceptance message is sent back to the originating site
++ The user is asked if they want to accept the link request
++ If confirmed, an acceptance message is sent back to the originating site
 + The BLUF site adds the requesting app to the list of social links on a profile
 + The backend for the requesting app uses the payload from BLUF to add the reciprocal link
 
