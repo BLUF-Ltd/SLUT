@@ -43,12 +43,12 @@ which is exchanges information, called slut_peers
 
 Links between profiles are stored in the slut_links table for the reference implementatin
 
-  `userid` char(36) NOT NULL DEFAULT '',
-  `service_id` char(36) NOT NULL DEFAULT '',
-  `remote_id` char(36) DEFAULT NULL,
-  `displayname` char(100) DEFAULT NULL,
-  `url` char(255) DEFAULT NULL,
-  `last_update` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp(),
+  	`userid` char(36) NOT NULL DEFAULT '',
+  	`service_id` char(36) NOT NULL DEFAULT '',
+  	`remote_id` char(36) DEFAULT NULL,
+  	`displayname` char(100) DEFAULT NULL,
+  	`url` char(255) DEFAULT NULL,
+  	`last_update` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp(),
 
 + userid is the unique user id of a member on the local system (in the case of BLUF, this is an internal value which, unlike BLUF numbers, cannot change)
 + service_id is the is of the service for this link, from the slut_peers table
