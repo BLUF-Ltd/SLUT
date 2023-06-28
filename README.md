@@ -25,13 +25,13 @@ to verify account ownership, and then the rest of the work happens in the backgr
 This information is based on the BLUF reference implementation. Each peer has a list of systems with
 which is exchanges information, called slut_peers
 
-  `service_id` char(36) NOT NULL DEFAULT '',
-  `service_name` char(255) DEFAULT NULL,
-  `webhook_url` char(255) DEFAULT NULL,
-  `request_url` char(255) DEFAULT NULL,
-  `request_method` enum('get','post','disabled') NOT NULL DEFAULT 'get',
-  `icon` char(50) DEFAULT NULL,
-  `public_key` text DEFAULT NULL,
+	`service_id` char(36) NOT NULL DEFAULT '',
+  	`service_name` char(255) DEFAULT NULL,
+  	`webhook_url` char(255) DEFAULT NULL,
+  	`request_url` char(255) DEFAULT NULL,
+  	`request_method` enum('get','post','disabled') NOT NULL DEFAULT 'get',
+  	`icon` char(50) DEFAULT NULL,
+  	`public_key` text DEFAULT NULL,
   
 + service_id is a UUID, unique for each site in the network
 + service_name is a friendly name to display to the user, like BLUF.com or Switched App
